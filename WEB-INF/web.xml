@@ -95,14 +95,8 @@ Copyright 2004-2018 Avaya Inc.
         <servlet-name>AppRoot</servlet-name>
         <servlet-class>flow.AppRoot</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_3">
-        <servlet-name>untitledServlet1</servlet-name>
-        <servlet-class>flow.untitledServlet1</servlet-class>
-    </servlet>
-    <servlet id="SAGE-callflow-servlet_main_6">
-        <servlet-name>untitledDisconnect1</servlet-name>
-        <servlet-class>flow.untitledDisconnect1</servlet-class>
-    </servlet>
+    
+    
     <servlet id="SAGE-callflow-servlet_main_0">
         <servlet-name>Start</servlet-name>
         <servlet-class>flow.Start</servlet-class>
@@ -135,14 +129,8 @@ Copyright 2004-2018 Avaya Inc.
         <servlet-name>AppRoot</servlet-name>
         <url-pattern>/AppRoot</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_3">
-        <servlet-name>untitledServlet1</servlet-name>
-        <url-pattern>/untitledServlet1</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_6">
-        <servlet-name>untitledDisconnect1</servlet-name>
-        <url-pattern>/untitledDisconnect1</url-pattern>
-    </servlet-mapping>
+    
+    
     <servlet-mapping id="SAGE-callflow-servletmapping_main_0">
         <servlet-name>Start</servlet-name>
         <url-pattern>/Start</url-pattern>

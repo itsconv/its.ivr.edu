@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class DBConnector {
 
-    // DB 접속 정보
+    // DB 접속 정보(재수정)     
     private static final String URL = "jdbc:mariadb://192.168.40.200:3306/ivr";
     private static final String USER = "root";
     private static final String PASSWORD = "ivr123!";
