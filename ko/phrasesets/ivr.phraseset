@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<phraseset audiolocation="internal" filename="untitled2" version="1.0">
+    <phrase version="1.0">
+        <displayname>its-1</displayname>
+        <talent/>
+        <phrasetext>죄송합니다. 지금은 업무시간이 종료되었습니다.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-1.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>its-2</displayname>
+        <talent/>
+        <phrasetext>산모 또는 배우자의 핸드폰 번호 열한 자리를 눌러주십시오. 지금 거신 전화번호를 누르시려면 우물정자를 눌러주십시오.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-2.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>its-3</displayname>
+        <talent/>
+        <phrasetext>번호를 남겨주시면 다음 업무일에 연락드리겠습니다. 연락받으실 핸드폰 번호 열한 자리를 눌러주십시오. 지금 거신 전화번호를 남기시려면 우물정자를 눌러주십시오</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-3.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>its-4</displayname>
+        <talent/>
+        <phrasetext>맞으면 1번, 틀리면 2번을 눌러주십시오</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-4.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>its-5</displayname>
+        <talent/>
+        <phrasetext>등록되었습니다. 확인후 연락드리도록 하겠습니다. 이용해주셔서 감사합니다.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-5.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>its-6</displayname>
+        <talent/>
+        <phrasetext>이용방법을 확인하신 후 다시 이용해주십시오</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-6.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>its-7</displayname>
+        <talent/>
+        <phrasetext>입력이 늦었습니다.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-7.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>its-8</displayname>
+        <talent/>
+        <phrasetext>잘못 누르셨습니다</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-8.wav</audiofile>
+    </phrase>
+    <phrase version="1.0">
+        <displayname>its-9</displayname>
+        <talent/>
+        <phrasetext>이용방법을 확인하신 후 다시 이용해주십시오.</phrasetext>
+        <basetext/>
+        <searchkeywords/>
+        <comments/>
+        <audiofile>its-9.wav</audiofile>
+    </phrase>
+</phraseset>

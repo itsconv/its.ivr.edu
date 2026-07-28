@@ -9,7 +9,7 @@ Copyright 2004-2018 Avaya Inc.
 <web-app id="WebApp_ID">
     <context-param>
         <param-name>sage.startlanguage</param-name>
-        <param-value>english</param-value>
+        <param-value>ko</param-value>
         <description>The starting language for the application.</description>
     </context-param>
     <context-param>
@@ -101,6 +101,46 @@ Copyright 2004-2018 Avaya Inc.
         <servlet-name>Start</servlet-name>
         <servlet-class>flow.Start</servlet-class>
     </servlet>
+    <servlet id="SAGE-callflow-servlet_main_11">
+        <servlet-name>closedGreeting</servlet-name>
+        <servlet-class>flow.closedGreeting</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_15">
+        <servlet-name>untitledDisconnect1</servlet-name>
+        <servlet-class>flow.untitledDisconnect1</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_25">
+        <servlet-name>LookupCustomer</servlet-name>
+        <servlet-class>flow.LookupCustomer</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_53">
+        <servlet-name>CustomerFound</servlet-name>
+        <servlet-class>flow.CustomerFound</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_60">
+        <servlet-name>DBSuccess</servlet-name>
+        <servlet-class>flow.DBSuccess</servlet-class>
+    </servlet>
+    
+    
+    
+    
+    <servlet id="SAGE-callflow-servlet_main_102">
+        <servlet-name>RegisterCallback</servlet-name>
+        <servlet-class>flow.RegisterCallback</servlet-class>
+    </servlet>
+    
+    
+    <servlet id="SAGE-callflow-servlet_main_136">
+        <servlet-name>UnregisteredGuide</servlet-name>
+        <servlet-class>flow.UnregisteredGuide</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_124">
+        <servlet-name>RegisteredGuide</servlet-name>
+        <servlet-class>flow.RegisteredGuide</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -135,4 +175,40 @@ Copyright 2004-2018 Avaya Inc.
         <servlet-name>Start</servlet-name>
         <url-pattern>/Start</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_11">
+        <servlet-name>closedGreeting</servlet-name>
+        <url-pattern>/closedGreeting</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_15">
+        <servlet-name>untitledDisconnect1</servlet-name>
+        <url-pattern>/untitledDisconnect1</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_25">
+        <servlet-name>LookupCustomer</servlet-name>
+        <url-pattern>/LookupCustomer</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_53">
+        <servlet-name>CustomerFound</servlet-name>
+        <url-pattern>/CustomerFound</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_60">
+        <servlet-name>DBSuccess</servlet-name>
+        <url-pattern>/DBSuccess</url-pattern>
+    </servlet-mapping>
+    
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_102">
+        <servlet-name>RegisterCallback</servlet-name>
+        <url-pattern>/RegisterCallback</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_136">
+        <servlet-name>UnregisteredGuide</servlet-name>
+        <url-pattern>/UnregisteredGuide</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_124">
+        <servlet-name>RegisteredGuide</servlet-name>
+        <url-pattern>/RegisteredGuide</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
