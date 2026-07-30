@@ -1,0 +1,62 @@
+28/07/2026 11:25:39:223  INFO - In Progress | session id:aaep710-2026209022133-18 | ivr:DBSuccess |  |  | call:dbSuccess | false | 01234118031785205536
+28/07/2026 11:30:05:568  INFO - In Progress | session id:aaep710-2026209022600-19 | ivr:DBSuccess |  |  | call:dbSuccess | false | 01234118231785205803
+28/07/2026 11:30:25:055  INFO - In Progress | session id:aaep710-2026209022600-19 | ivr:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | 01234118231785205803
+28/07/2026 11:31:34:279  INFO - In Progress | session id:aaep710-2026209022729-20 | ivr:DBSuccess |  |  | call:dbSuccess | false | 01234118241785205891
+28/07/2026 11:31:46:119  INFO - In Progress | session id:aaep710-2026209022729-20 | ivr:AvayaDefaultDisconnectHandler | Default Disconnect Handler | Default connection.disconnect handler caught disconnect, application exiting |  |  | 01234118241785205891
+28/07/2026 13:34:37:083  INFO - In Progress | session id:aaep710-2026209043031-1 | ivr:DBSuccess |  |  | call:dbSuccess | false | 01234124281785213274
+28/07/2026 13:39:15:724  INFO - In Progress | session id:aaep710-2026209043510-2 | ivr:DBSuccess |  |  | call:dbSuccess | false | 01234124441785213553
+28/07/2026 13:59:56:312  INFO - In Progress | session id:aaep710-2026209045550-7 | ivr:CustomerFound |  |  | call:customerFound | true | 01234125541785214793
+28/07/2026 14:00:10:524  INFO - In Progress | session id:aaep710-2026209045605-8 | ivr:CustomerFound |  |  | call:customerFound | true | 01234125551785214808
+28/07/2026 14:01:23:803  INFO - In Progress | session id:aaep710-2026209045718-9 | ivr:CustomerFound |  |  | call:customerFound | true | 01234125561785214881
+28/07/2026 17:59:45:294  INFO - In Progress | session id:aaep710-2026209085539-11 | ivr:CustomerFound |  |  | call:customerFound | true | 01234137111785229182
+28/07/2026 18:00:05:405 ERROR - In Progress | session id:aaep710-2026209085539-11 | ivr:RegisterCallback |  | javax.servlet.ServletException: Error instantiating servlet class [flow.untitledData1] | Exception stack trace | Error processing request
+ EXCEPTION> 
+javax.servlet.ServletException: Error instantiating servlet class [flow.untitledData1]
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1069)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:779)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:704)
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:467)
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392)
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311)
+	at com.avaya.sce.runtime.SCEServlet.forward(SCEServlet.java:1454)
+	at com.avaya.sce.runtime.BasicServlet.handleRequest(BasicServlet.java:133)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doPost(SCEServlet.java:148)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.ClassNotFoundException: flow.untitledData1
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1291)
+	at org.apache.catalina.loader.WebappClassLoaderBase.loadClass(WebappClassLoaderBase.java:1119)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClass(DefaultInstanceManager.java:512)
+	at org.apache.catalina.core.DefaultInstanceManager.loadClassMaybePrivileged(DefaultInstanceManager.java:493)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:119)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1050)
+	... 34 more
+ | 01234137111785229182
+29/07/2026 09:43:21:007  INFO - In Progress | session id:aaep710-2026210003914-12 | ivr:CustomerFound |  |  | call:customerFound | true | 01234027891785285798
+29/07/2026 09:46:22:082  INFO - In Progress | session id:aaep710-2026210004215-13 | ivr:CustomerFound |  |  | call:customerFound | true | 01234028051785285979
+29/07/2026 09:47:32:082  INFO - In Progress | session id:aaep710-2026210004326-14 | ivr:CustomerFound |  |  | call:customerFound | true | 01234028211785286049
+29/07/2026 09:48:26:937  INFO - In Progress | session id:aaep710-2026210004420-15 | ivr:CustomerFound |  |  | call:customerFound | true | 01234028221785286104

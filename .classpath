@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="WEB-INF/lib/scert-07.21.05.02.jar"/>
 	<classpathentry kind="var" path="TOMCAT_HOME/lib/scertcommon-07.21.05.02.jar"/>
 	<classpathentry kind="lib" path="WEB-INF/lib/mariadb-java-client-3.5.9.jar"/>
+	<classpathentry kind="lib" path="WEB-INF/lib/gson-2.14.0.jar"/>
 	<classpathentry kind="output" path="WEB-INF/classes"/>
 </classpath>

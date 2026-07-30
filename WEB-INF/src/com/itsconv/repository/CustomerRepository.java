@@ -22,9 +22,9 @@ public class CustomerRepository {
             PreparedStatement statement =
                     connection.prepareStatement(FIND_BY_PHONE_SQL)
         ) {
-            statement.setString(1, phoneNumber);
+            statement.setString(1, phoneNumber); //SQL의 첫 번째 ? 자리에 phoneNumber 값을 넣는 것
 
-            try (ResultSet resultSet = statement.executeQuery()) {
+            try (ResultSet resultSet = statement.executeQuery()) { //executeQuery()로 SQL 실행
 
                 if (resultSet.next()) {
                     String customerName =
