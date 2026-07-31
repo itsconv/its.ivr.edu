@@ -102,6 +102,62 @@ public final class CallbackApiClient {
     }
 
     /**
+     * 콜백 등록 API 서버에 실제로 등록되어 있는 콜백 목록을 조회한다(확인용 GET 요청).
+     * README의 "등록 확인" 엔드포인트(GET /api/v1/callbacks)를 그대로 사용한다.
+     * 조회 자체가 실패해도 예외를 던지지 않고 빈 문자열을 반환한다.
+     */
+    public String fetchRegisteredCallbacks() {
+        HttpURLConnection connection = null;
+
+        try {
+            connection = (HttpURLConnection) new URL(API_URL).openConnection();
+            connection.setRequestMethod("GET");
+            connection.setConnectTimeout(CONNECT_TIMEOUT_MILLIS);
+            connection.setReadTimeout(READ_TIMEOUT_MILLIS);
+            connection.setRequestProperty("Accept", "application/json");
+
+            int httpStatus = connection.getResponseCode();
+            return readResponse(connection, httpStatus);
+
+        } catch (Exception e) {
+            return "";
+        } finally {
+            if (connection != null) {
+                connection.disconnect();
+            }
+        }
+    }
+
+    /**
+     * 등록 목록 전체 중에서 방금 등록한 callbackId 하나만 찾아서 반환한다(확인용).
+     * 목록 조회나 파싱이 실패해도 예외를 던지지 않고 안내 문자열을 반환한다.
+     */
+    public String fetchRegisteredCallback(String callbackId) {
+        String responseJson = fetchRegisteredCallbacks();
+
+        if (responseJson == null || responseJson.isEmpty()) {
+            return "(등록 목록 조회 실패 또는 응답 없음)";
+        }
+
+        try {
+            CallbackListResponse list = GSON.fromJson(responseJson, CallbackListResponse.class);
+
+            if (list != null && list.items != null) {
+                for (CallbackItem item : list.items) {
+                    if (callbackId != null && callbackId.equals(item.callbackId)) {
+                        return GSON.toJson(item);
+                    }
+                }
+            }
+
+            return "(callbackId=" + callbackId + " 항목을 등록 목록에서 찾지 못함)";
+
+        } catch (Exception e) {
+            return "(등록 목록 파싱 실패 - " + e.getMessage() + ")";
+        }
+    }
+
+    /**
      * HTTP 응답 본문을 UTF-8 문자열로 반환한다.
      */
     private String readResponse(
@@ -169,5 +225,26 @@ public final class CallbackApiClient {
 
         private String code;
         private String callbackId;
+    }
+
+    /**
+     * GET /api/v1/callbacks 응답 전체({"count":N,"items":[...]})를 담을 객체다.
+     */
+    private static final class CallbackListResponse {
+
+        private int count;
+        private CallbackItem[] items;
+    }
+
+    /**
+     * 등록 목록의 항목 하나를 담을 객체다.
+     */
+    private static final class CallbackItem {
+
+        private String callbackId;
+        private String callbackNumber;
+        private String ani;
+        private String custName;
+        private String regDt;
     }
 }

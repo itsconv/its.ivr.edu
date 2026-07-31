@@ -7,7 +7,7 @@
     <variable factoryID="" name="call:customerFound" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="call:dbSuccess" owner="" type="" value="" version="1.0"/>
     <variable factoryID="" name="call:lookupPhone" owner="" type="" value="" version="1.0"/>
-    <variable factoryID="" name="call:retryCount" owner="" type="" value="4" version="1.0"/>
+    <variable factoryID="" name="call:retryCount" owner="" type="" value="3" version="1.0"/>
     <variable factoryID="" name="CheckInput:confidence" owner="com.avaya.sce.callflow" type="com.avaya.sce.callflow.menu" value="" version="1.0">
         <editpolicies>
             <policy name="opaque" value="true"/>

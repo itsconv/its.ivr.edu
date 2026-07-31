@@ -60,3 +60,44 @@ Caused by: java.lang.ClassNotFoundException: flow.untitledData1
 29/07/2026 09:46:22:082  INFO - In Progress | session id:aaep710-2026210004215-13 | ivr:CustomerFound |  |  | call:customerFound | true | 01234028051785285979
 29/07/2026 09:47:32:082  INFO - In Progress | session id:aaep710-2026210004326-14 | ivr:CustomerFound |  |  | call:customerFound | true | 01234028211785286049
 29/07/2026 09:48:26:937  INFO - In Progress | session id:aaep710-2026210004420-15 | ivr:CustomerFound |  |  | call:customerFound | true | 01234028221785286104
+31/07/2026 09:19:51:748  INFO - In Progress | session id:aaep710-2026212001543-17 | ivr:CustomerFound |  |  | call:customerFound | true | 01234011661785457189
+31/07/2026 09:33:23:624  INFO - In Progress | session id:aaep710-2026212002914-19 | ivr:CustomerFound |  |  | call:customerFound | true | 01234012331785458000
+31/07/2026 09:38:03:683  INFO - In Progress | session id:aaep710-2026212003355-20 | ivr:CustomerFound |  |  | call:customerFound | true | 01234012491785458281
+31/07/2026 09:38:28:703 ERROR - In Progress | session id:aaep710-2026212003355-20 | ivr:ConfirmRetryLog |  | java.lang.NullPointerException | Exception stack trace | Error processing request
+ EXCEPTION> 
+java.lang.NullPointerException
+	at flow.ConfirmRetryLog.servletImplementation(ConfirmRetryLog.java:46)
+	at com.avaya.sce.runtime.BasicServlet.handleRequest(BasicServlet.java:112)
+	at com.avaya.sce.runtime.AppServlet.processRequest(AppServlet.java:96)
+	at com.avaya.sce.runtime.SCEServlet.requestHandler(SCEServlet.java:247)
+	at com.avaya.sce.runtime.SCEServlet.doPost(SCEServlet.java:148)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:650)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+ | 01234012491785458281
+31/07/2026 09:43:57:415  INFO - In Progress | session id:aaep710-2026212003948-1 | ivr:CustomerFound |  |  | call:customerFound | true | 01234012801785458634
+31/07/2026 09:44:54:029  INFO - In Progress | session id:aaep710-2026212004045-2 | ivr:CustomerFound |  |  | call:customerFound | true | 01234012921785458691
+31/07/2026 09:45:02:896  INFO - In Progress | session id:aaep710-2026212004054-3 | ivr:CustomerFound |  |  | call:customerFound | true | 01234012971785458700
+31/07/2026 09:49:37:000  INFO - In Progress | session id:aaep710-2026212004528-4 | ivr:CustomerFound |  |  | call:customerFound | true | 01234013131785458974
+31/07/2026 09:51:04:828  INFO - In Progress | session id:aaep710-2026212004656-5 | ivr:CustomerFound |  |  | call:customerFound | true | 01234013191785459062

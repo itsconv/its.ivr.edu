@@ -116,17 +116,14 @@ Copyright 2004-2018 Avaya Inc.
         <servlet-name>CustomerFound</servlet-name>
         <servlet-class>flow.CustomerFound</servlet-class>
     </servlet>
-    <servlet id="SAGE-callflow-servlet_main_60">
-        <servlet-name>DBSuccess</servlet-name>
-        <servlet-class>flow.DBSuccess</servlet-class>
-    </servlet>
+    
     
     
     
     
     <servlet id="SAGE-callflow-servlet_main_102">
-        <servlet-name>RegisterCallback</servlet-name>
-        <servlet-class>flow.RegisterCallback</servlet-class>
+        <servlet-name>RegistCallback</servlet-name>
+        <servlet-class>flow.RegistCallback</servlet-class>
     </servlet>
     
     
@@ -161,14 +158,46 @@ Copyright 2004-2018 Avaya Inc.
         <servlet-class>flow.CheckInput</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_239">
-        <servlet-name>untitledData1</servlet-name>
-        <servlet-class>flow.untitledData1</servlet-class>
+        <servlet-name>RegistResult</servlet-name>
+        <servlet-class>flow.RegistResult</servlet-class>
     </servlet>
     <servlet id="SAGE-callflow-servlet_main_245">
-        <servlet-name>Disconnect1</servlet-name>
-        <servlet-class>flow.Disconnect1</servlet-class>
+        <servlet-name>Disconnect</servlet-name>
+        <servlet-class>flow.Disconnect</servlet-class>
     </servlet>
     
+    <servlet id="SAGE-callflow-servlet_main_271">
+        <servlet-name>RegistSuccess</servlet-name>
+        <servlet-class>flow.RegistSuccess</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_275">
+        <servlet-name>RegistFail</servlet-name>
+        <servlet-class>flow.RegistFail</servlet-class>
+    </servlet>
+    
+    <servlet id="SAGE-callflow-servlet_main_300">
+        <servlet-name>RetryLog</servlet-name>
+        <servlet-class>flow.RetryLog</servlet-class>
+    </servlet>
+    
+
+    
+    <servlet id="SAGE-callflow-servlet_main_312">
+        <servlet-name>OnDisconnectLog</servlet-name>
+        <servlet-class>flow.OnDisconnectLog</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_330">
+        <servlet-name>CallStartLog</servlet-name>
+        <servlet-class>flow.CallStartLog</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_335">
+        <servlet-name>ConfirmRetryLog</servlet-name>
+        <servlet-class>flow.ConfirmRetryLog</servlet-class>
+    </servlet>
+    <servlet id="SAGE-callflow-servlet_main_341">
+        <servlet-name>CallEndLog</servlet-name>
+        <servlet-class>flow.CallEndLog</servlet-class>
+    </servlet>
     <servlet-mapping id="avayadefaultdisconnecthandler-servletmapping">
         <servlet-name>AvayaDefaultDisconnectHandler</servlet-name>
         <url-pattern>/AvayaDefaultDisconnectHandler</url-pattern>
@@ -216,15 +245,12 @@ Copyright 2004-2018 Avaya Inc.
         <servlet-name>CustomerFound</servlet-name>
         <url-pattern>/CustomerFound</url-pattern>
     </servlet-mapping>
-    <servlet-mapping id="SAGE-callflow-servletmapping_main_60">
-        <servlet-name>DBSuccess</servlet-name>
-        <url-pattern>/DBSuccess</url-pattern>
-    </servlet-mapping>
+    
     
     
     <servlet-mapping id="SAGE-callflow-servletmapping_main_102">
-        <servlet-name>RegisterCallback</servlet-name>
-        <url-pattern>/RegisterCallback</url-pattern>
+        <servlet-name>RegistCallback</servlet-name>
+        <url-pattern>/RegistCallback</url-pattern>
     </servlet-mapping>
     
     <servlet-mapping id="SAGE-callflow-servletmapping_main_136">
@@ -256,13 +282,43 @@ Copyright 2004-2018 Avaya Inc.
         <url-pattern>/CheckInput</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_239">
-        <servlet-name>untitledData1</servlet-name>
-        <url-pattern>/untitledData1</url-pattern>
+        <servlet-name>RegistResult</servlet-name>
+        <url-pattern>/RegistResult</url-pattern>
     </servlet-mapping>
     <servlet-mapping id="SAGE-callflow-servletmapping_main_245">
-        <servlet-name>Disconnect1</servlet-name>
-        <url-pattern>/Disconnect1</url-pattern>
+        <servlet-name>Disconnect</servlet-name>
+        <url-pattern>/Disconnect</url-pattern>
     </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_271">
+        <servlet-name>RegistSuccess</servlet-name>
+        <url-pattern>/RegistSuccess</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_275">
+        <servlet-name>RegistFail</servlet-name>
+        <url-pattern>/RegistFail</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_300">
+        <servlet-name>RetryLog</servlet-name>
+        <url-pattern>/RetryLog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_312">
+        <servlet-name>OnDisconnectLog</servlet-name>
+        <url-pattern>/OnDisconnectLog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_330">
+        <servlet-name>CallStartLog</servlet-name>
+        <url-pattern>/CallStartLog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_335">
+        <servlet-name>ConfirmRetryLog</servlet-name>
+        <url-pattern>/ConfirmRetryLog</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping id="SAGE-callflow-servletmapping_main_341">
+        <servlet-name>CallEndLog</servlet-name>
+        <url-pattern>/CallEndLog</url-pattern>
+    </servlet-mapping>
+    
+
     
     
     
